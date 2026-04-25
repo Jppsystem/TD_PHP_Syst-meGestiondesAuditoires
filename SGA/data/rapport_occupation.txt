@@ -1,0 +1,7 @@
+salle_id;designation;creneaux_occupes;creneaux_libres;taux_occupation
+AUD-L1;Auditoire L1;3;7;30.00%
+AUD-L2;Auditoire L2;0;10;0.00%
+AUD-L3;Auditoire L3;3;7;30.00%
+AUD-L4;Auditoire L4;6;4;60.00%
+SAL-MACH;Salle machine;2;8;20.00%
+SAL-MM;Salle management et marketing;2;8;20.00%
