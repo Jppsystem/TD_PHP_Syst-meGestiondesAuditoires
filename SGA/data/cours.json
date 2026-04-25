@@ -1,0 +1,114 @@
+[
+  {
+    "id": "TC-L1-ALGO",
+    "intitule": "Algo",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L1"
+  },
+  {
+    "id": "TC-L1-BD",
+    "intitule": "BD",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L1"
+  },
+  {
+    "id": "TC-L1-CLOG",
+    "intitule": "Circuits logiques",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L1"
+  },
+  {
+    "id": "TC-L2-ALGO",
+    "intitule": "Algo",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L2"
+  },
+  {
+    "id": "TC-L2-BD",
+    "intitule": "BD",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L2"
+  },
+  {
+    "id": "TC-L2-CLOG",
+    "intitule": "Circuits logiques",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L2"
+  },
+  {
+    "id": "TC-L3-ALGO",
+    "intitule": "Algo",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L3"
+  },
+  {
+    "id": "TC-L3-BD",
+    "intitule": "BD",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L3"
+  },
+  {
+    "id": "TC-L3-CLOG",
+    "intitule": "Circuits logiques",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L3"
+  },
+  {
+    "id": "TC-L4-ALGO",
+    "intitule": "Algo",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L4"
+  },
+  {
+    "id": "TC-L4-BD",
+    "intitule": "BD",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L4"
+  },
+  {
+    "id": "TC-L4-CLOG",
+    "intitule": "Circuits logiques",
+    "volume_horaire": 4,
+    "type": "tronc_commun",
+    "promotion_id": "L4"
+  },
+  {
+    "id": "OPT-CRS-L3-SEC",
+    "intitule": "Securite informatique",
+    "volume_horaire": 4,
+    "type": "option",
+    "option_id": "OPT-L3-SEC"
+  },
+  {
+    "id": "OPT-CRS-L3-RES",
+    "intitule": "Reseaux informatiques",
+    "volume_horaire": 4,
+    "type": "option",
+    "option_id": "OPT-L3-RES"
+  },
+  {
+    "id": "OPT-CRS-L4-DS",
+    "intitule": "Data sciences",
+    "volume_horaire": 4,
+    "type": "option",
+    "option_id": "OPT-L4-DS"
+  },
+  {
+    "id": "OPT-CRS-L4-ROB",
+    "intitule": "Robotique",
+    "volume_horaire": 4,
+    "type": "option",
+    "option_id": "OPT-L4-ROB"
+  }
+]

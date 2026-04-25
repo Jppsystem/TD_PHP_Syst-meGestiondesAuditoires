@@ -1,0 +1,26 @@
+[
+  {
+    "id": "OPT-L3-SEC",
+    "libelle": "Securite informatique",
+    "promotion_parente": "L3",
+    "effectif": 50
+  },
+  {
+    "id": "OPT-L3-RES",
+    "libelle": "Reseaux informatiques",
+    "promotion_parente": "L3",
+    "effectif": 50
+  },
+  {
+    "id": "OPT-L4-DS",
+    "libelle": "Data sciences",
+    "promotion_parente": "L4",
+    "effectif": 40
+  },
+  {
+    "id": "OPT-L4-ROB",
+    "libelle": "Robotique",
+    "promotion_parente": "L4",
+    "effectif": 40
+  }
+]
