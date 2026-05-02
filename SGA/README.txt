@@ -5,6 +5,15 @@ SGA - Systeme de gestion automatique du planning
 SGA/
 |- index.php
 |- README.txt
+|- config/
+|  |- auth.config.example.php (modele pour auth.local.php)
+|- scripts/
+|  `- bootstrap_auth_local.php (genere auth.local.php + secret TOTP)
+|- auth/
+|  |- session.php (demarrage session + fonctions_auth)
+|  |- login.php (formulaire connexion et TOTP)
+|  |- login_view.php (HTML)
+|  `- logout.php (fin de session)
 |- data/
 |  |- salles.json
 |  |- promotions.json
@@ -16,6 +25,8 @@ SGA/
 |  |- fonctions_contraintes.php
 |  |- fonctions_planning.php
 |  |- fonctions_affichage.php
+|  |- fonctions_auth.php (session et garde applicative)
+|  |- fonctions_totp.php (verification TOTP)
 |  `- fonctions_sauvegarde.php
 |- assets/
 |  `- style.css
@@ -81,7 +92,27 @@ http://localhost:8000
 - le planning est genere a la demande
 - le resultat est sauvegarde dans data/planning.json
 
-6. Remarques
+6. Authentification et double facteur (TOTP)
+
+Fichier par defaut inclus : config/auth.local.php avec identifiant admin et mot de passe demo2026
+(sans double authentification tant que totp_secret reste vide). A remplacer en environnement reel.
+
+Sinon deux modes de configuration :
+
+A) Generation automatique (recommande)
+   Depuis le dossier SGA :
+   php scripts/bootstrap_auth_local.php "MotDePasseFort"
+   Puis importer l URI otpauth affiche dans une application TOTP ou saisir le secret Base32.
+
+B) Manuel
+   Copier config/auth.config.example.php vers config/auth.local.php
+   Definir password_hash avec PHP :
+   php -r "echo password_hash('TonMotDePasse', PASSWORD_DEFAULT), PHP_EOL;"
+   Definir totp_secret avec un secret Base32 (voir script ci-dessus) ou chaine vide pour desactiver la 2FA.
+
+Session PHP : cookie httponly, samesite Lax ; deconnexion via le bandeau en haut de l interface.
+
+7. Remarques
 
 - Les exemples fournis utilisent 8 salles, 4 promotions, 6 options et 14 cours
 - Les volumes horaires non multiples de 4h sont acceptes mais occupent un dernier creneau partiel

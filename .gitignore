@@ -1,0 +1,2 @@
+# Décommenter pour empêcher de versionner tes secrets après modification de auth.local.php :
+# SGA/config/auth.local.php

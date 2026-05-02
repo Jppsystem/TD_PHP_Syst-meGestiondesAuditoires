@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+require_once __DIR__ . '/auth/session.php';
+
+if (!sga_est_connecte_complet()) {
+    header('Location: auth/login.php', true, 303);
+    exit;
+}
+
 require_once __DIR__ . '/includes/fonctions_chargement.php';
 require_once __DIR__ . '/includes/fonctions_contraintes.php';
 require_once __DIR__ . '/includes/fonctions_planning.php';

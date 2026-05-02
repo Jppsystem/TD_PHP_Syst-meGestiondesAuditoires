@@ -32,4 +32,18 @@ $titrePage = $titrePage ?? 'SGA - Système de Gestion des Auditoires';
                 <span class="panel-note">4 auditoires • 1 salle machine • 1 salle management</span>
             </div>
         </header>
+        <?php
+        $sgaNomUtilisateur = function_exists('sga_utilisateur_session') ? sga_utilisateur_session() : '';
+        $sgaConnecte = function_exists('sga_est_connecte_complet') && sga_est_connecte_complet();
+        $sgaCsrf = function_exists('sga_csrf_token') ? sga_csrf_token() : '';
+        ?>
+        <?php if ($sgaConnecte && $sgaCsrf !== ''): ?>
+            <nav class="session-bar" aria-label="Session utilisateur">
+                <span class="session-user"><?= htmlspecialchars($sgaNomUtilisateur, ENT_QUOTES, 'UTF-8'); ?></span>
+                <form method="post" class="session-logout-form" action="auth/logout.php">
+                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($sgaCsrf, ENT_QUOTES, 'UTF-8'); ?>">
+                    <button type="submit" class="btn-logout">Déconnexion</button>
+                </form>
+            </nav>
+        <?php endif; ?>
         <main class="contenu">

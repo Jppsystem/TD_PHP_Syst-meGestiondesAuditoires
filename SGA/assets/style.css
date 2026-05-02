@@ -396,6 +396,61 @@ label {
     gap: 16px;
 }
 
+.session-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin: -16px 0 20px;
+    padding: 12px 16px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.session-user {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.session-logout-form {
+    margin: 0;
+}
+
+.btn-logout {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    padding: 8px 16px;
+}
+
+.btn-logout:hover {
+    border-color: var(--accent);
+    color: var(--accent-hover);
+    background: rgba(74, 158, 255, 0.08);
+    transform: none;
+    box-shadow: none;
+}
+
+.auth-card-wrap {
+    max-width: 420px;
+}
+
+.auth-form h2 {
+    margin-top: 0;
+}
+
+.auth-form label {
+    margin-top: 12px;
+}
+
+.auth-form button {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
 /* Responsive */
 @media (max-width: 840px) {
     .hero {
@@ -421,5 +476,4 @@ label {
     .resume-grid {
         grid-template-columns: 1fr;
     }
-}
 }
