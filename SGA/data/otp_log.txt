@@ -1,3 +1,1 @@
 2026-05-04T18:20:55+00:00 | OTP pour admin@faculte.edu : 522717 (expire dans 300s)
-2026-05-04T18:39:38+00:00 | OTP pour admin@faculte.edu : 037666 (expire dans 300s)
-2026-05-04T20:12:34+00:00 | OTP pour admin@faculte.edu : 731842 (expire dans 300s)

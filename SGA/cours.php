@@ -123,7 +123,7 @@ require __DIR__ . '/includes/header.php';
 ?>
 
         <h1 class="page-title">Gestion des cours</h1>
-        <p class="page-sub">Tronc commun et cours d’option ; la durée est exprimée en nombre de créneaux de 2 h (1 ou 2).</p>
+        <p class="page-sub">Tronc commun et cours d’option ; la durée est exprimée en nombre de créneaux de 4 h (1 ou 2).</p>
 
         <?php if ($message !== '') : ?><div class="alert alert-success"><?php echo sga_e($message); ?></div><?php endif; ?>
         <?php if ($error !== '') : ?><div class="alert alert-error"><?php echo sga_e($error); ?></div><?php endif; ?>
@@ -166,8 +166,8 @@ require __DIR__ . '/includes/header.php';
                 <div class="form-row">
                     <label class="label" for="duree_creneaux">Durée (créneaux)</label>
                     <select class="select" id="duree_creneaux" name="duree_creneaux" required>
-                        <option value="1">1 créneau (2 h)</option>
-                        <option value="2">2 créneaux (4 h)</option>
+                        <option value="1">1 créneau (4 h)</option>
+                        <option value="2">2 créneaux (8 h)</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Ajouter</button>

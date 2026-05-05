@@ -8,7 +8,7 @@ require_once __DIR__ . '/functions.php';
 define('SGA_PLANNING_FILE', 'planning.json');
 
 /**
- * Définition des créneaux : Lundi–Vendredi, 4 blocs de 2h par jour.
+ * Définition des créneaux : Lundi–Vendredi, 2 blocs de 4h par jour.
  *
  * @return array Liste de créneaux avec id_numérique (0..19), jour_idx (0-4), slot_idx (0-3)
  */
@@ -16,10 +16,8 @@ function sga_planning_creneaux_definitions()
 {
     $jours = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi');
     $horaires = array(
-        array('08:00', '10:00'),
-        array('10:00', '12:00'),
-        array('14:00', '16:00'),
-        array('16:00', '18:00'),
+        array('08:00', '12:00'),
+        array('13:00', '17:00'),
     );
     $out = array();
     $id = 0;

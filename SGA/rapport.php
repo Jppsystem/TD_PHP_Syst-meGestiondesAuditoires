@@ -19,7 +19,7 @@ require __DIR__ . '/includes/header.php';
 ?>
 
         <h1 class="page-title">Rapport d’occupation</h1>
-        <p class="page-sub">Taux basé sur les créneaux occupés (20 par semaine par salle), selon le planning actuel.</p>
+        <p class="page-sub">Taux basé sur les créneaux occupés (10 par semaine par salle), selon le planning actuel.</p>
 
         <div class="card glass">
             <h2 style="margin-top:0;font-size:1.1rem">Synthèse globale</h2>

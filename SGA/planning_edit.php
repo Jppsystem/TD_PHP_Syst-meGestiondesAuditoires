@@ -21,7 +21,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $eid = sga_sanitize_string(isset($_POST['entry_id']) ? $_POST['entry_id'] : '', 80);
         $sid = sga_sanitize_string(isset($_POST['salle_id']) ? $_POST['salle_id'] : '', 64);
-        $start = sga_validate_int_range(isset($_POST['creneau_start']) ? $_POST['creneau_start'] : null, 0, 19);
+        $defs = sga_planning_creneaux_definitions();
+        $maxCreneauId = max(0, count($defs) - 1);
+        $start = sga_validate_int_range(
+            isset($_POST['creneau_start']) ? $_POST['creneau_start'] : null,
+            0,
+            $maxCreneauId
+        );
         if ($eid === '' || $sid === '' || $start === null) {
             $error = 'Paramètres invalides.';
         } else {
@@ -111,7 +117,7 @@ require __DIR__ . '/includes/header.php';
                                     $lab = isset($defs[$cid]) ? $defs[$cid]['label'] : $cid;
                                     ?>
                                     <option value="<?php echo (int) $cid; ?>" <?php echo ($currentStart === (int) $cid) ? 'selected' : ''; ?>>
-                                        <?php echo sga_e($lab); ?><?php echo $duree === 2 ? ' (bloc 2 h)' : ''; ?>
+                                        <?php echo sga_e($lab); ?><?php echo $duree === 2 ? ' (bloc 8 h)' : ''; ?>
                                     </option>
                                 <?php endforeach; ?>
                             </select>

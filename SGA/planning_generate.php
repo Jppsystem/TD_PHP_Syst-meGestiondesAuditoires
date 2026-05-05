@@ -35,7 +35,7 @@ require __DIR__ . '/includes/header.php';
 ?>
 
         <h1 class="page-title">Génération du planning</h1>
-        <p class="page-sub">Algorithme glouton : pas de conflit de salle sur un même créneau, capacité suffisante, une promotion ne peut pas avoir deux cours en même temps.</p>
+        <p class="page-sub">Algorithme glouton : 2 créneaux par jour (08:00–12:00 et 13:00–17:00), sans conflit de salle, avec capacité suffisante et sans chevauchement de promotion.</p>
 
         <?php if ($message !== '') : ?>
             <div class="alert <?php echo ($error !== '') ? 'alert-info' : 'alert-success'; ?>"><?php echo sga_e($message); ?></div>

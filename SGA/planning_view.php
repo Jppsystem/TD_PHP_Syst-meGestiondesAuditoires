@@ -18,7 +18,7 @@ $capWarn = sga_planning_check_capacities($entries, $salles, $effectifs);
 $byCreneau = sga_planning_map_by_creneau($entries);
 
 $jours = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi');
-$slotsPerDay = 4;
+$slotsPerDay = 2;
 $defs = sga_planning_creneaux_definitions();
 
 $pageTitle = 'Planning';

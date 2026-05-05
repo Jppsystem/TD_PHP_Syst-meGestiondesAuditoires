@@ -1,12 +1,12 @@
 {
     "version": 1,
-    "generated_at": "2026-05-04T20:17:53+00:00",
+    "generated_at": "2026-05-05T19:58:50+00:00",
     "success": true,
     "message": "Planning généré : toutes les affectations sont réalisées.",
     "unplaced": [],
     "entries": [
         {
-            "id": "p_97100786dfd1505c",
+            "id": "p_127df699d56d7ade",
             "cours_id": "c_maths_l1",
             "cours_intitule": "Mathématiques I",
             "salle_id": "AUD-L1",
@@ -14,12 +14,12 @@
             "creneau_ids": [
                 0
             ],
-            "creneau_label": "Lundi 08:00-10:00",
+            "creneau_label": "Lundi 08:00-12:00",
             "promotion_niveau": "L1",
             "duree_creneaux": 1
         },
         {
-            "id": "p_eb0415cef0993dc9",
+            "id": "p_ceb939461356de25",
             "cours_id": "c_info_l1",
             "cours_intitule": "Introduction à l'informatique",
             "salle_id": "AUD-L1",
@@ -27,12 +27,12 @@
             "creneau_ids": [
                 1
             ],
-            "creneau_label": "Lundi 10:00-12:00",
+            "creneau_label": "Lundi 13:00-17:00",
             "promotion_niveau": "L1",
             "duree_creneaux": 1
         },
         {
-            "id": "p_96c6d4eb2c3afac5",
+            "id": "p_b582e6c13f170c28",
             "cours_id": "c_ang_l2",
             "cours_intitule": "Anglais technique",
             "salle_id": "AUD-L2",
@@ -40,66 +40,53 @@
             "creneau_ids": [
                 0
             ],
-            "creneau_label": "Lundi 08:00-10:00",
+            "creneau_label": "Lundi 08:00-12:00",
             "promotion_niveau": "L2",
             "duree_creneaux": 1
         },
         {
-            "id": "p_d931fbeefe52424c",
+            "id": "p_ed7883c2fd355ef3",
             "cours_id": "c_stats_l2",
             "cours_intitule": "Probabilités & Statistiques",
             "salle_id": "AUD-L2",
             "salle_nom": "Auditoire L2",
             "creneau_ids": [
-                1,
-                2
+                2,
+                3
             ],
-            "creneau_label": "Lundi 10:00-12:00 + 14:00-16:00",
+            "creneau_label": "Mardi 08:00-12:00 + 13:00-17:00",
             "promotion_niveau": "L2",
             "duree_creneaux": 2
         },
         {
-            "id": "p_acd86d8e7f7a35dd",
+            "id": "p_9d209df73793eda1",
             "cours_id": "c_0ce7227da05b2ab5",
             "cours_intitule": "Circuits logiques",
             "salle_id": "AUD-L2",
             "salle_nom": "Auditoire L2",
             "creneau_ids": [
-                3
+                1
             ],
-            "creneau_label": "Lundi 16:00-18:00",
+            "creneau_label": "Lundi 13:00-17:00",
             "promotion_niveau": "L2",
             "duree_creneaux": 1
         },
         {
-            "id": "p_8e2b511748c3424c",
-            "cours_id": "c_dbf6768293311735",
-            "cours_intitule": "Droit de l'informatique",
-            "salle_id": "AUD-L2",
-            "salle_nom": "Auditoire L2",
-            "creneau_ids": [
-                4
-            ],
-            "creneau_label": "Mardi 08:00-10:00",
-            "promotion_niveau": "L2",
-            "duree_creneaux": 1
-        },
-        {
-            "id": "p_55176324b8727f94",
+            "id": "p_16775c168f9290a9",
             "cours_id": "c_prog_l3i",
             "cours_intitule": "Programmation avancée",
             "salle_id": "AUD-L3",
             "salle_nom": "Auditoire L3",
             "creneau_ids": [
-                8,
-                9
+                0,
+                1
             ],
-            "creneau_label": "Mercredi 08:00-10:00 + 10:00-12:00",
+            "creneau_label": "Lundi 08:00-12:00 + 13:00-17:00",
             "promotion_niveau": "L3",
             "duree_creneaux": 2
         },
         {
-            "id": "p_7b4e33618eee6668",
+            "id": "p_bd912a0480785f5b",
             "cours_id": "c_bd_l3i",
             "cours_intitule": "Bases de données",
             "salle_id": "AUD-L3",
@@ -107,12 +94,12 @@
             "creneau_ids": [
                 2
             ],
-            "creneau_label": "Lundi 14:00-16:00",
+            "creneau_label": "Mardi 08:00-12:00",
             "promotion_niveau": "L3",
             "duree_creneaux": 1
         },
         {
-            "id": "p_f18d77d8f56636b3",
+            "id": "p_0e6cd460a7e03a68",
             "cours_id": "c_Secu-info_l3",
             "cours_intitule": "Sécurité Informatique",
             "salle_id": "AUD-L3",
@@ -120,12 +107,12 @@
             "creneau_ids": [
                 3
             ],
-            "creneau_label": "Lundi 16:00-18:00",
+            "creneau_label": "Mardi 13:00-17:00",
             "promotion_niveau": "L3",
             "duree_creneaux": 1
         },
         {
-            "id": "p_b7eaedf4e88ceafe",
+            "id": "p_a7687b1797b4de42",
             "cours_id": "c_Data-sc_l4",
             "cours_intitule": "Data Science",
             "salle_id": "AUD-L4",
@@ -134,12 +121,12 @@
                 0,
                 1
             ],
-            "creneau_label": "Lundi 08:00-10:00 + 10:00-12:00",
+            "creneau_label": "Lundi 08:00-12:00 + 13:00-17:00",
             "promotion_niveau": "L4",
             "duree_creneaux": 2
         },
         {
-            "id": "p_fdf591f57b2cee16",
+            "id": "p_b9611165cbea6ada",
             "cours_id": "c_Robot_l4",
             "cours_intitule": "Robotique",
             "salle_id": "AUD-L4",
@@ -147,10 +134,9 @@
             "creneau_ids": [
                 2
             ],
-            "creneau_label": "Lundi 14:00-16:00",
+            "creneau_label": "Mardi 08:00-12:00",
             "promotion_niveau": "L4",
             "duree_creneaux": 1
         }
-    ],
-    "last_manual_edit": "2026-05-04T20:18:46+00:00"
+    ]
 }

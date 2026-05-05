@@ -78,13 +78,5 @@
         "promotion_niveau": "L2",
         "option_id": "",
         "duree_creneaux": 1
-    },
-    {
-        "id": "c_dbf6768293311735",
-        "intitule": "Droit de l'informatique",
-        "type": "tronc_commun",
-        "promotion_niveau": "L2",
-        "option_id": "",
-        "duree_creneaux": 1
     }
 ]
