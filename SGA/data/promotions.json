@@ -1,70 +1,26 @@
 [
   {
-    "id": "L1",
-    "libelle": "Licence 1",
-    "effectif_total": 120,
-    "sous_groupes": [
-      {
-        "id": "L1-A",
-        "libelle": "L1 Groupe A",
-        "effectif": 60
-      },
-      {
-        "id": "L1-B",
-        "libelle": "L1 Groupe B",
-        "effectif": 60
-      }
-    ]
+    "id": "p_l1",
+    "niveau": "L1",
+    "libelle": "Première année",
+    "effectif": 650
   },
   {
-    "id": "L2",
-    "libelle": "Licence 2",
-    "effectif_total": 140,
-    "sous_groupes": [
-      {
-        "id": "L2-A",
-        "libelle": "L2 Groupe A",
-        "effectif": 70
-      },
-      {
-        "id": "L2-B",
-        "libelle": "L2 Groupe B",
-        "effectif": 70
-      }
-    ]
+    "id": "p_l2",
+    "niveau": "L2",
+    "libelle": "Deuxième année",
+    "effectif": 430
   },
   {
-    "id": "L3",
-    "libelle": "Licence 3",
-    "effectif_total": 100,
-    "sous_groupes": [
-      {
-        "id": "L3-A",
-        "libelle": "L3 Groupe A",
-        "effectif": 50
-      },
-      {
-        "id": "L3-B",
-        "libelle": "L3 Groupe B",
-        "effectif": 50
-      }
-    ]
+    "id": "p_l3",
+    "niveau": "L3",
+    "libelle": "Troisième année",
+    "effectif": 240
   },
   {
-    "id": "L4",
-    "libelle": "Licence 4",
-    "effectif_total": 80,
-    "sous_groupes": [
-      {
-        "id": "L4-A",
-        "libelle": "L4 Groupe A",
-        "effectif": 40
-      },
-      {
-        "id": "L4-B",
-        "libelle": "L4 Groupe B",
-        "effectif": 40
-      }
-    ]
+    "id": "p_l4",
+    "niveau": "L4",
+    "libelle": "Quatrième année",
+    "effectif": 150
   }
 ]

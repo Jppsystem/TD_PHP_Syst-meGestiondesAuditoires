@@ -1,0 +1,8 @@
+{
+  "users": [
+    {
+      "email": "admin@faculte.edu",
+      "password_hash": "$2y$12$Man1lDSJMAyldinc7atpw.43cpMBY0PehcjeKlm2k/MASzq/AEvyi"
+    }
+  ]
+}

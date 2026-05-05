@@ -1,0 +1,423 @@
+/* SGA — Thème SaaS glassmorphism, palette demandée */
+
+:root {
+  --bg-deep: #0f172a;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --glass: rgba(15, 23, 42, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --surface: rgba(255, 255, 255, 0.06);
+  --danger: #f87171;
+  --success: #34d399;
+  --radius: 14px;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body.app-body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: var(--font, "Inter", system-ui, sans-serif);
+  line-height: 1.55;
+}
+
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(79, 70, 229, 0.35), transparent 55%),
+    radial-gradient(900px 500px at 90% 20%, rgba(56, 189, 248, 0.12), transparent 50%),
+    linear-gradient(160deg, #0b1220 0%, var(--bg-deep) 40%, #020617 100%);
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  margin: 0.75rem auto 0;
+  max-width: 1200px;
+  border-radius: var(--radius);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand-mark {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #a5b4fc, var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.15rem;
+}
+
+.brand-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+}
+
+.main-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.main-nav a:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.main-nav a.nav-logout {
+  color: #fca5a5;
+}
+
+.nav-toggle {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  color: var(--text);
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+  }
+  .main-nav.is-open {
+    display: flex;
+  }
+}
+
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.page-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.page-sub {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.12s, background 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #6366f1);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.35);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--glass-border);
+}
+
+.btn-danger {
+  background: rgba(248, 113, 113, 0.15);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: rgba(2, 6, 23, 0.45);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: 2px solid rgba(79, 70, 229, 0.45);
+  outline-offset: 1px;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.alert {
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--glass-border);
+}
+
+.alert-error {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fecaca;
+}
+
+.alert-success {
+  background: rgba(52, 211, 153, 0.12);
+  color: #a7f3d0;
+}
+
+.alert-info {
+  background: rgba(56, 189, 248, 0.1);
+  color: #bae6fd;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  background: rgba(2, 6, 23, 0.35);
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.data-table th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.data-table tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.grid-dash {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.dash-tile {
+  padding: 1.15rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.dash-tile:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79, 70, 229, 0.45);
+}
+
+.dash-tile h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.dash-tile p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.auth-panel {
+  max-width: 420px;
+  margin: 4vh auto;
+  padding: 2rem;
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-logo .brand-mark {
+  font-size: 1.75rem;
+}
+
+.otp-demo {
+  font-family: ui-monospace, monospace;
+  letter-spacing: 0.2em;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.75rem;
+  background: rgba(79, 70, 229, 0.15);
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+
+.planning-grid {
+  display: grid;
+  grid-template-columns: 120px repeat(5, 1fr);
+  gap: 2px;
+  font-size: 0.75rem;
+  min-width: 720px;
+}
+
+.planning-grid .pg-head {
+  padding: 0.45rem;
+  background: rgba(255, 255, 255, 0.06);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.planning-grid .pg-slot-label {
+  padding: 0.45rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-muted);
+}
+
+.planning-grid .pg-cell {
+  padding: 0.4rem;
+  min-height: 52px;
+  background: rgba(2, 6, 23, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.planning-grid .pg-course {
+  background: rgba(79, 70, 229, 0.2);
+  border-radius: 6px;
+  padding: 0.25rem 0.35rem;
+  margin-bottom: 2px;
+  border-left: 3px solid var(--primary);
+}
+
+.app-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+}

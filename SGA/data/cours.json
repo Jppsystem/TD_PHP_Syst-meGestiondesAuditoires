@@ -1,114 +1,90 @@
 [
-  {
-    "id": "TC-L1-ALGO",
-    "intitule": "Algo",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L1"
-  },
-  {
-    "id": "TC-L1-BD",
-    "intitule": "BD",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L1"
-  },
-  {
-    "id": "TC-L1-CLOG",
-    "intitule": "Circuits logiques",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L1"
-  },
-  {
-    "id": "TC-L2-ALGO",
-    "intitule": "Algo",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L2"
-  },
-  {
-    "id": "TC-L2-BD",
-    "intitule": "BD",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L2"
-  },
-  {
-    "id": "TC-L2-CLOG",
-    "intitule": "Circuits logiques",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L2"
-  },
-  {
-    "id": "TC-L3-ALGO",
-    "intitule": "Algo",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L3"
-  },
-  {
-    "id": "TC-L3-BD",
-    "intitule": "BD",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L3"
-  },
-  {
-    "id": "TC-L3-CLOG",
-    "intitule": "Circuits logiques",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L3"
-  },
-  {
-    "id": "TC-L4-ALGO",
-    "intitule": "Algo",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L4"
-  },
-  {
-    "id": "TC-L4-BD",
-    "intitule": "BD",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L4"
-  },
-  {
-    "id": "TC-L4-CLOG",
-    "intitule": "Circuits logiques",
-    "volume_horaire": 4,
-    "type": "tronc_commun",
-    "promotion_id": "L4"
-  },
-  {
-    "id": "OPT-CRS-L3-SEC",
-    "intitule": "Securite informatique",
-    "volume_horaire": 4,
-    "type": "option",
-    "option_id": "OPT-L3-SEC"
-  },
-  {
-    "id": "OPT-CRS-L3-RES",
-    "intitule": "Reseaux informatiques",
-    "volume_horaire": 4,
-    "type": "option",
-    "option_id": "OPT-L3-RES"
-  },
-  {
-    "id": "OPT-CRS-L4-DS",
-    "intitule": "Data sciences",
-    "volume_horaire": 4,
-    "type": "option",
-    "option_id": "OPT-L4-DS"
-  },
-  {
-    "id": "OPT-CRS-L4-ROB",
-    "intitule": "Robotique",
-    "volume_horaire": 4,
-    "type": "option",
-    "option_id": "OPT-L4-ROB"
-  }
+    {
+        "id": "c_maths_l1",
+        "intitule": "Mathématiques I",
+        "type": "tronc_commun",
+        "promotion_niveau": "L1",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_info_l1",
+        "intitule": "Introduction à l'informatique",
+        "type": "tronc_commun",
+        "promotion_niveau": "L1",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_ang_l2",
+        "intitule": "Anglais technique",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_stats_l2",
+        "intitule": "Probabilités & Statistiques",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 2
+    },
+    {
+        "id": "c_prog_l3i",
+        "intitule": "Programmation avancée",
+        "type": "option",
+        "promotion_niveau": "L3",
+        "option_id": "Ing-log",
+        "duree_creneaux": 2
+    },
+    {
+        "id": "c_bd_l3i",
+        "intitule": "Bases de données",
+        "type": "option",
+        "promotion_niveau": "L3",
+        "option_id": "Ing-log",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_Secu-info_l3",
+        "intitule": "Sécurité Informatique",
+        "type": "option",
+        "promotion_niveau": "L3",
+        "option_id": "Secu-info",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_Data-sc_l4",
+        "intitule": "Data Science",
+        "type": "option",
+        "promotion_niveau": "L4",
+        "option_id": "Data-sc",
+        "duree_creneaux": 2
+    },
+    {
+        "id": "c_Robot_l4",
+        "intitule": "Robotique",
+        "type": "tronc_commun",
+        "promotion_niveau": "L4",
+        "option_id": "Robot",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_0ce7227da05b2ab5",
+        "intitule": "Circuits logiques",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_dbf6768293311735",
+        "intitule": "Droit de l'informatique",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    }
 ]
