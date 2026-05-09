@@ -25,11 +25,11 @@
     },
     {
         "id": "c_stats_l2",
-        "intitule": "Probabilités & Statistiques",
+        "intitule": "Gestion des projets informatiques",
         "type": "tronc_commun",
         "promotion_niveau": "L2",
         "option_id": "",
-        "duree_creneaux": 2
+        "duree_creneaux": 1
     },
     {
         "id": "c_prog_l3i",
@@ -37,7 +37,7 @@
         "type": "option",
         "promotion_niveau": "L3",
         "option_id": "Ing-log",
-        "duree_creneaux": 2
+        "duree_creneaux": 1
     },
     {
         "id": "c_bd_l3i",
@@ -61,7 +61,7 @@
         "type": "option",
         "promotion_niveau": "L4",
         "option_id": "Data-sc",
-        "duree_creneaux": 2
+        "duree_creneaux": 1
     },
     {
         "id": "c_Robot_l4",
@@ -72,8 +72,64 @@
         "duree_creneaux": 1
     },
     {
-        "id": "c_0ce7227da05b2ab5",
-        "intitule": "Circuits logiques",
+        "id": "c_python_l1",
+        "intitule": "Langage de programmation python",
+        "type": "tronc_commun",
+        "promotion_niveau": "L1",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_reseaux_l2",
+        "intitule": "Réseaux informatiques",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_Meth-analyse_l2",
+        "intitule": "Méthodes et analyses numériques",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_php_l2",
+        "intitule": "Programmation web 2 (PHP)",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 2
+    },
+    {
+        "id": "c_irs_l2",
+        "intitule": "Initiation à la recherche scientifique",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_maintenance_l2",
+        "intitule": "Techniques de maintenance des ordinateurs",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_System-emb_l2",
+        "intitule": "Systèmes embarqués",
+        "type": "tronc_commun",
+        "promotion_niveau": "L2",
+        "option_id": "",
+        "duree_creneaux": 1
+    },
+    {
+        "id": "c_droit-inf_l2",
+        "intitule": "Droit de l'informatique",
         "type": "tronc_commun",
         "promotion_niveau": "L2",
         "option_id": "",
