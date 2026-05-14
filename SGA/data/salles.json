@@ -1,32 +1,32 @@
 [
-    {
-        "id": "AUD-L1",
-        "nom": "Auditoire L1",
-        "capacite": 700
-    },
-    {
-        "id": "AUD-L2",
-        "nom": "Auditoire L2",
-        "capacite": 500
-    },
-    {
-        "id": "AUD-L3",
-        "nom": "Auditoire L3",
-        "capacite": 300
-    },
-    {
-        "id": "AUD-L4",
-        "nom": "Auditoire L4",
-        "capacite": 200
-    },
-    {
-        "id": "SALLE-MACH",
-        "nom": "Salle de machines",
-        "capacite": 200
-    },
-    {
-        "id": "SALLE-MGT",
-        "nom": "Salle de management",
-        "capacite": 200
-    }
+  {
+    "id": "AUD-L1",
+    "nom": "Auditoire L1",
+    "capacite": 700
+  },
+  {
+    "id": "AUD-L2",
+    "nom": "Auditoire L2",
+    "capacite": 500
+  },
+  {
+    "id": "AUD-L3",
+    "nom": "Auditoire L3",
+    "capacite": 300
+  },
+  {
+    "id": "AUD-L4",
+    "nom": "Auditoire L4",
+    "capacite": 200
+  },
+  {
+    "id": "SALLE-MACH",
+    "nom": "Salle de machines",
+    "capacite": 100
+  },
+  {
+    "id": "SALLE-MGT",
+    "nom": "Salle de management",
+    "capacite": 80
+  }
 ]
